@@ -186,12 +186,16 @@ function App() {
                 )}
               </div>
             </div>
-              <button
-                className={squad.length < 2 ? "btn btn-warning disabled" : "btn btn-success"}
-                onClick={() => squad.length >= 2 && startBattle(squad)}
-              >
-               {squad.length >= 2 ? "Start Battle" : "Select at least 2 Pokemon"}
-              </button>
+            <button
+              className={
+                squad.length < 2
+                  ? "btn btn-warning disabled"
+                  : "btn btn-success"
+              }
+              onClick={() => squad.length >= 2 && startBattle(squad)}
+            >
+              {squad.length >= 2 ? "Start Battle" : "Select at least 2 Pokemon"}
+            </button>
           </div>
         </div>
       </div>
